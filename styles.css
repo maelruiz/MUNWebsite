@@ -286,3 +286,8 @@ svg {
   .schedule-heading {
     margin: 20px;
   }
+  
+  .offcanvas-button-intro {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
