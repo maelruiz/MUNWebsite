@@ -9,7 +9,16 @@
     <title>Lincoln - Argentina MUN</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body id="body">
+<body id="body" class="p-3 m-0 border-0 bd-example m-0 border-0">    
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-target">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">MUN @Lincoln</a>
@@ -55,6 +64,7 @@
                 <div class="text-overlay">
                     <h2>Welcome to the Lincoln - Argentina MUN!</h2>
                     <p>Explore the world of international diplomacy and collaboration.</p>
+                    <button class="btn btn-primary offcanvas-button-intro" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
                 </div>
             </div>
         </div>
@@ -367,9 +377,6 @@
             </div>
         </div>
       </div>        
-
-
-
     </section>
 
     <footer class="footer">
@@ -382,7 +389,7 @@
             <div class="layout">
               <div class="layout_item w-50">
                 <div class="newsletter">
-                  <h3 class="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.</h3>
+                  <h3 class="newsletter_title">Get updates on what you probably want to know about in your inbox.</h3>
                   <div id="liveAlertPlaceholder"></div>
                   <form action="">
                     <input type="text" placeholder="Email Address">
